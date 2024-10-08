@@ -12,9 +12,9 @@ function About() {
                 {/* Left Side: Logo and Text Section */}
                 <div className="sm:w-1/2 px-5 sm:px-20">
                     {/* Logo and Name */}
-                    <div className="text-3xl sm:text-4xl font-bold mb-10 text-[#e4e4e4] flex items-center">
+                    <div className="text-3xl sm:text-4xl font-bold mb-10 text-[#e4e4e4] flex items-center mt-10">
                         <div>Thel
-                            <img className="inline w-8 sm:w-11 mx-2" src={logo} alt="logo" />
+                            <img className="inline w-8 sm:w-11 " src={logo} alt="logo" />
                             ees
                         </div>
                     </div>
@@ -27,7 +27,7 @@ function About() {
                         </p>
 
                         {/* Description Section */}
-                        <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row sm:justify-between text-[11px] sm:text-sm font-normal">
+                        <div className="mt-6 sm:mt-10 flex  sm:flex-row sm:justify-between text-[11px] sm:text-sm font-normal">
                             <p className="flex-1 sm:mr-4 text-[#e4e4e4] mb-4 sm:mb-0">
                                 Skilled Frontend developer with a BCA degree and a proven record of creating engaging UIs with React tools like
                                 React Hooks, Redux, and Axios.
