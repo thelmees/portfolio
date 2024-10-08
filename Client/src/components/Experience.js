@@ -38,7 +38,7 @@ function Experience({ scrollY, activeComp }) {
 
         <div className="flex-1">
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl sm:text-2xl font-bold text-[#e4e4e4] ml-0 sm:ml-16">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#e4e4e4] ml-0 sm:ml-16 sm:mt-0 mt-10">
               Internship
             </h2>
           </div>
