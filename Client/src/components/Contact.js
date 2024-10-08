@@ -12,7 +12,7 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('https://portfolio-f36rpmohl-thelmees-nizars-projects.vercel.app/send', data);
+      const response = await axios.post('https://portfolio-git-main-thelmees-nizars-projects.vercel.app//send', data);
       setAlert({ message: response.data, visible: true, url: check, txt: true });
       console.log(response.data);
       setData({ name: '', email: '', subject: '', message: '' });
