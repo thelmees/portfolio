@@ -2,9 +2,18 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 const dotenv = require("dotenv")
 const app = express()
+const cors = require('cors');
 dotenv.config()
 
 app.use(express.json())
+
+const corsOptions = {
+    origin: 'https://portfolio-u86e-thelmees-nizars-projects.vercel.app', // Your front-end URL
+    methods: 'GET,POST', // Allowed methods
+    optionsSuccessStatus: 200,
+  };
+
+  app.use(cors(corsOptions));
 
 
 app.get('/', (req,res) => {

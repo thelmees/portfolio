@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Sidebar from "../Navbar"; // You may want to adjust this if you want to keep your sidebar.
 import logo from "../assets/logo.png";
+import profile from '../assets/profile.png';
+
 
 function About() {
     return (
@@ -45,7 +47,7 @@ function About() {
 
                 {/* Right Side: Profile Image */}
                 <div className="mt-14 sm:mt-0 flex justify-center sm:w-1/2 px-5 sm:px-20">
-                    <img className="w-60 sm:w-96  transform transition duration-300 hover:scale-105" src="/profile.png" alt="profile" />
+                    <img className="w-60 sm:w-96  transform transition duration-300 hover:scale-105" src={profile} alt="profile" />
                 </div>
             </div>
         </section>
