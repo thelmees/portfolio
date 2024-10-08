@@ -23,14 +23,14 @@ app.post('/send', async (req, res) => {
 const transporter = await nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'thelmees.nizar@gmail.com',
-        pass: process.env.PASSWORD
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
     }
 });
 
 const mailOptions = await {
     from:email,
-    to: 'thelmees.nizar@gmail.com',
+    to: process.env.EMAIL_USER,
     subject:subject,
     text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
 };
