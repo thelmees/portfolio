@@ -78,25 +78,24 @@ function Contact() {
         </form>
 
         {loading && (
-          <div className="fixed inset-0 flex justify-center items-center">
-            <div className="absolute inset-0 bg-black opacity-50"></div>   
-            <div className='z-10 space-x-2 flex justify-center items-center w-1/4 h-[24.6%] p-5 bg-white rounded-lg shadow-lg translate-[-50%,-50%]'>
-              <div className='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
-              <div className='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
-              <div className='h-8 w-8 bg-black rounded-full animate-bounce'></div>
-            </div>
-          </div>
-        )}
-
-        {alert.visible && ( 
-          <div className="fixed inset-0 flex justify-center items-center">  
-            <div className="absolute inset-0 bg-black opacity-50"></div>  
-            <div className='z-10 flex flex-col justify-center items-center w-1/4 p-5 bg-white rounded-lg shadow-lg translate-[-50%,-50%]'>
-              <p><img className='h-20 m-2.5 text-center' src={alert.url} alt='img' /></p>
-              <p className={alert.txt ? 'text-[green] m-2.5' : 'text-[red] m-2.5'}>{alert.message}</p>
-            </div>
-          </div>
-        )}
+  <div className="fixed inset-0 flex justify-center items-center">
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+    <div className='relative z-10 space-x-2 flex justify-center items-center w-full max-w-xs md:max-w-sm lg:max-w-md h-[250px] p-6 bg-white rounded-lg shadow-lg'>
+      <div className='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+      <div className='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+      <div className='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+    </div>
+  </div>
+)}
+{alert.visible && (
+  <div className="fixed inset-0 flex justify-center items-center p-4">
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+    <div className='relative z-10 flex flex-col justify-center items-center w-full max-w-xs md:max-w-sm lg:max-w-md h-[250px] p-6 bg-white rounded-lg shadow-lg'>
+      <p><img className='h-20 m-2.5' src={alert.url} alt='img' /></p>
+      <p className={alert.txt ? 'text-[green] m-2.5' : 'text-[red] m-2.5'}>{alert.message}</p>
+    </div>
+  </div>
+)}
       </div>
     </div>
   );
