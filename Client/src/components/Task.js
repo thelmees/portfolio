@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Footer from './Footer';
 
 function Task({ images = [], title, description }) {
     const settings = {
@@ -16,12 +15,10 @@ function Task({ images = [], title, description }) {
 
     return (
         <div className="w-full h-full flex flex-col items-center justify-center text-white rounded-lg shadow-lg p-4 md:p-8">
-            {/* Heading */}
             <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8 md:mb-12 text-[red] mt-5">
                 {title}
             </h2>
 
-            {/* Carousel */}
             <div className="w-full mx-auto mb-4 md:mb-8 p-4 md:p-8">
                 <Slider {...settings}>
                     {(images || []).map((image, index) => (

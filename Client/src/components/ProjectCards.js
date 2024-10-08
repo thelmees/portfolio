@@ -5,7 +5,6 @@ import { FaGlobe } from "react-icons/fa";
 const ProjectsCard = ({ title, des, src, href, git, onClick }) => {
   return (
     <div className="w-full sm:w-[320px] lg:w-[360px] p-4 sm:p-5 bg-[#111213c2] m-2 rounded-lg shadow-shadowOne flex flex-col">
-      {/* Image Section */}
       <div className="w-full h-[200px] sm:h-[250px] lg:h-[280px] overflow-hidden rounded-lg">
         <img
           className="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer"
@@ -14,14 +13,12 @@ const ProjectsCard = ({ title, des, src, href, git, onClick }) => {
         />
       </div>
 
-      {/* Content Section */}
       <div className="mt-5 flex flex-col gap-4">
         <div className="flex items-center justify-between">
           <h3 className="text-red-500 uppercase text-sm sm:text-lg font-bold">
             {title}
           </h3>
           <div className="flex gap-2">
-            {/* GitHub Link */}
             <a
               href={git}
               onClick={onClick}
@@ -29,7 +26,6 @@ const ProjectsCard = ({ title, des, src, href, git, onClick }) => {
             >
               <BsGithub />
             </a>
-            {/* Live Project Link */}
             <a
               href={href}
               onClick={onClick}
@@ -40,7 +36,6 @@ const ProjectsCard = ({ title, des, src, href, git, onClick }) => {
           </div>
         </div>
 
-        {/* Description Section */}
         <p className="text-xs sm:text-sm text-[#e4e4e4] tracking-wide mt-3 overflow-auto h-[150px] sm:h-[120px] scrollbar-hide">
           {des}
         </p>

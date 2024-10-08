@@ -7,18 +7,15 @@ import ExperienceData from './ExperienceData';
 function Experience({ scrollY, activeComp }) {
   return (
     <div id="Experience" className="bg-[#0F0F0F] min-h-screen w-full px-6 sm:px-10 py-10">
-      {/* Title */}
       <p className="text-red-500 text-2xl sm:text-3xl font-extrabold pt-10 sm:ml-16 mb-6">
         Experience.
       </p>
 
-      {/* Experience Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
         className="py-12 sm:flex flex-col sm:flex-row gap-20"
       >
-        {/* Job Experience Section */}
         <div className="flex-1">
           <div className="flex flex-col gap-4">
             <h2 className="text-xl sm:text-2xl font-bold text-[#e4e4e4] ml-0 sm:ml-16">
@@ -36,11 +33,9 @@ function Experience({ scrollY, activeComp }) {
               enhancing frontend experiences, which honed my skills in JavaScript, React, and MongoDB, while also fostering 
               effective communication and teamwork in a fast-paced environment."
             />
-            {/* Add more ExperienceData components as needed */}
           </div>
         </div>
 
-        {/* Internship Section */}
         <div className="flex-1">
           <div className="flex flex-col gap-4">
             <h2 className="text-xl sm:text-2xl font-bold text-[#e4e4e4] ml-0 sm:ml-16">
@@ -58,12 +53,10 @@ function Experience({ scrollY, activeComp }) {
               optimizing database queries, and integrating APIs, which deepened my expertise in JavaScript, Node.js, and Express.js 
               while reinforcing my ability to work effectively in an agile environment."
             />
-            {/* Add more ExperienceData components as needed */}
           </div>
         </div>
       </motion.div>
 
-      {/* Project and Skills Components */}
       <Project />
       <Skills />
     </div>

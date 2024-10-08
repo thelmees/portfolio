@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import TaskData from "./components/TaskData";
 import Footer from "./components/Footer";
-import FooterBottom from "./components/FooterBottom";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -49,7 +48,6 @@ function App() {
           </Routes>
         </div>
         <Footer />
-        {/* <FooterBottom /> */}
     </div>
   );
 }

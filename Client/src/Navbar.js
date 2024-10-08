@@ -6,7 +6,6 @@ import './navbar.css';
 function Navbar({ handleNavbar, activeComp, activeNav }) {
   return (
     <div className={`${activeComp ? 'fixed w-full backdrop-blur-md transition duration-300 shadow-lg' : 'fixed w-full'} bg-transparent pt-3 text-base sidebarScroll sidebar`}>
-      {/* Logo */}
       <img
         onClick={() => handleNavbar('About')}
         className={`${activeComp ? "w-8 sm:w-10 m-3 sm:ml-12 float-left animate-pulse cursor-pointer" : "hidden"}`}
@@ -14,7 +13,6 @@ function Navbar({ handleNavbar, activeComp, activeNav }) {
         alt="logo"
       />
 
-      {/* Navigation Links */}
       <div className="flex justify-center sm:justify-start sm:ml-[450px] space-x-10 sm:space-x-16 mt-4 sm:mt-0 pt-3">
         <div className="flex space-x-10 sm:space-x-16">
           <button
