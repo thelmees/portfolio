@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="App w-screen min-h-screen m-0 p-0 flex flex-col">
+    <div className="App ">
 
         <div className="flex-grow">
           <Routes>

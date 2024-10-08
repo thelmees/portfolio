@@ -20,6 +20,14 @@ body::-webkit-scrollbar{
   display: none;
 }
 
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .about{
   background: linear-gradient(to right, #21316C, #3D1F39,black);
   
