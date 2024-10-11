@@ -8,7 +8,7 @@ dotenv.config()
 app.use(express.json())
 
 const corsOptions = {
-    origin: 'https://thelmees-portfolio.web.app/', // Your front-end URL
+    origin: 'https://thelmees-portfolio.web.app', // Your front-end URL
     methods: 'GET,POST', // Allowed methods
     optionsSuccessStatus: 200,
   };
