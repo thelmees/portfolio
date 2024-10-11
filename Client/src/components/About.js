@@ -5,11 +5,11 @@ import profile from '../assets/profile.png';
 
 function About() {
     return (
-        <section id='About' className="about mt-[-40px] sm:mt-0 h-auto w-screen py-10 sm:py-20 bg-gray-900">
+        <section id='About' className="about h-auto w-screen py-10 sm:py-20 bg-gray-900">
             <div className="sm:flex items-center justify-between">
                 <div className="sm:w-1/2 px-5 sm:px-20">
 
-                    <div className="text-3xl sm:text-4xl font-bold mb-10 text-[#e4e4e4] flex items-center mt-10">
+                    <div className="text-3xl sm:text-4xl font-bold mb-10 text-[#e4e4e4] flex items-center  mt-10">
                         <div>Thel
                             <img className="inline w-8 sm:w-11 " src={logo} alt="logo" />
                             ees

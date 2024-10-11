@@ -32,10 +32,15 @@ body::-webkit-scrollbar{
   background: linear-gradient(to right, #21316C, #3D1F39,black);
   
 }
-
-/* #Contact{
-  background-image: url(https://cdn.prod.website-files.com/61233686e9da0579abde1edb/6360c794af347dfff85bd7e5_noise.png);
-} */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: red;
+  transform-origin: 0%;
+}
 
 #Experience{
   background-image: url(https://cdn.prod.website-files.com/61233686e9da0579abde1edb/6360c794af347dfff85bd7e5_noise.png);
