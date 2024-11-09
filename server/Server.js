@@ -8,8 +8,8 @@ dotenv.config()
 app.use(express.json())
 
 const corsOptions = {
-    origin: 'https://thelmees-portfolio.web.app', // Your front-end URL
-    methods: 'GET,POST', // Allowed methods
+    origin: 'https://thelmees-portfolio.web.app',
+    methods: 'GET,POST',
     optionsSuccessStatus: 200,
   };
 
@@ -39,7 +39,8 @@ const mailOptions = await {
     from:email,
     to: process.env.EMAIL_USER,
     subject:subject,
-    text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
+    text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`,
+    replyTo: email
 };
 
 transporter.sendMail (mailOptions, (error, info) => {
